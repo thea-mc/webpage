@@ -1,0 +1,359 @@
+body {
+  margin: 0;
+  padding:0;
+  background-color: #ffffff;
+  font-family: sans-serif;
+
+  position: relative;
+
+}
+
+nav {
+
+  background: #ffffff;
+  width:100%;
+
+}
+
+
+
+
+
+ul {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+
+  margin: 0;
+  padding: 20px 0;
+  background: #fff;
+  display: flex;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,.3);
+}
+
+ul li {
+  list-style: none;
+  text-align: center;
+  display: block;
+  border-right: 1px solid rgba(0,0,0,0.2);
+
+
+}
+
+ul li:last-child {
+  border-right: none;
+}
+
+ul li a {
+  text-decoration: none;
+  padding: 0 50px;
+  display: block;
+
+}
+
+ul li a .icon {
+  width: 40px;
+  height: 40px;
+  text-align:center;
+  background: #ccc;
+  overflow: hidden;
+  margin: 0 auto 10px;
+
+}
+
+
+ul li a .icon .fa {
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  font-size: 34px;
+  transition: 0.5s;
+  color: #000;
+
+
+}
+
+ul li a .icon .fa:last-child{
+  color: #e91e63;
+
+}
+
+ul li a:hover .icon .fa {
+  transform: translateY(-100%);
+}
+
+ul li a .name {
+  position: relative;
+  height: 20px;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+
+}
+
+ul li a .name span {
+  display: block;
+  position: relative;
+  color: #000;
+  font-size: 18px;
+  line-height: 20px;
+  transition: 0.5s;
+
+
+}
+
+
+ul li a .name span:before {
+  content: attr(data-text);
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #e91e63;
+}
+
+ul li a:hover .name span {
+  transform: translateY(20px);
+}
+
+
+
+
+
+@media (max-width: 609px) {
+
+
+
+
+
+
+
+  ul {
+
+    width: 77%;
+    display: block;
+    overflow: hidden;
+    transition: 0.5s;
+    box-shadow: none;
+    transform: translate(-50%) scaleY(1);
+    transform-origin: top;
+    margin-top: 1.5em;
+    border-radius: 2.5vh;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    box-shadow: 9px 9px 19px -4px rgba(46,3,46,0.61);
+
+  }
+
+
+  ul.active {
+    transform: translate(-50%) scaleY(0);
+
+  }
+
+  ul li a.name span {
+    font-size: 7vw;
+  }
+
+  ul li a {
+    padding: 0 3vw;
+  }
+
+
+
+  h1 {
+    margin-top: -10.5vw;
+    padding-top: 10vw;
+    padding: 2vw;
+    font-size: 4.5vw;
+    border-right: 4px solid white!important;
+
+
+  }
+
+
+  nav  {
+    height: 0;
+}
+
+
+
+
+  ul li {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding: 10px 0;
+    display: flex;
+    border-right: none;
+  }
+
+  ul li:last-child {
+    border-bottom: none;
+
+  }
+
+  ul li a {
+    padding: 0 20px;
+
+  }
+
+  ul li a .icon {
+    display: inline-block;
+    float: left;
+    margin: 0 auto;
+
+  }
+
+
+
+  ul li a .name {
+    width: auto;
+    display: inline-block;
+    margin: 10px;
+
+  }
+  .nav-icon {
+  margin-left: 1em;
+  margin-top: 1em;
+  width: 40px;
+  position: relative;
+}
+
+.nav-icon:after,
+.nav-icon:before,
+.nav-icon div {
+  background-color: #000;
+  border-radius: 3px;
+  content: '';
+  display: block;
+  height: 5px;
+  margin: 7px 0;
+  transition: all 0.5s ease-in-out;
+}
+
+h1{
+  margin-top: 1vh;
+
+}
+section {
+  position: initial;
+width: 100%;
+height: 50vh;
+background: url(img/wool.jpg);
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
+}
+.nav-icon:hover:before {
+  transform: translateY(12px) rotate(135deg);
+}
+
+.nav-icon:hover:after {
+  transform: translateY(-12px) rotate(-135deg);
+}
+
+.nav-icon:hover div {
+  transform: scale(0);
+}
+
+
+
+
+
+
+
+
+
+  }
+}
+
+
+header {
+  background-color: #ffffff;
+  position: relative;
+
+}
+
+h1 {
+
+  position: absolute;
+  left: 50%;
+  margin-left: -7.5ch;
+  text-align: center
+}
+
+
+
+
+
+
+
+
+ section {
+
+   position: relative;
+   background: linear-gradient(90deg, #f0027f, #75489f);
+
+ }
+
+
+ .typewriter h1 {
+   overflow: hidden; /* Ensures the content is not revealed until the animation */
+   border-right: .15em solid orange; /* The typwriter cursor */
+   white-space: nowrap; /* Keeps the content on a single line */
+   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+   letter-spacing: .15em; /* Adjust as needed */
+   animation:
+     typing 3.5s steps(40, end),
+     blink-caret .75s step-end infinite;
+ }
+
+ /* The typing effect */
+ @keyframes typing {
+   from { width: 0 }
+   to { width: 100% }
+ }
+
+ /* The typewriter cursor effect */
+ @keyframes blink-caret {
+   from, to { border-color: transparent }
+   50% { border-color: orange; }
+ }
+
+
+
+
+section {
+  position: initial;
+  width: 100%;
+  height: 50vh;
+
+  background: url(img/wool.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+.slantedDivA {
+  position: relative;
+  width: 100%;
+  height: 70em;
+  background: #ff0153;
+
+
+}
+
+.slantedDivA:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: inherit;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transform-origin: top right;
+  transform: skewY(5deg);
+
+}

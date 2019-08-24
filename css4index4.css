@@ -1,0 +1,265 @@
+body {
+  margin: 0;
+  padding:0;
+  background-color: #ffffff;
+  font-family: sans-serif;
+
+  position: relative;
+
+}
+
+
+.navbar {
+  border: none!important;
+  margin-bottom: 0;
+}
+
+.navbar-toggler {
+  background-color: #e91e63;
+  color: lightgrey;
+  border-color: none;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  font-size: 2rem;
+  margin-left: 90%;
+  display: block;
+
+
+}
+
+
+@media (max-width: 466px) {
+  .navbar-toggler {
+    margin-left: 75%;
+  }
+}
+
+
+button:focus {
+  outline: 1px dotted;
+}
+
+
+ul {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+
+  margin: 0;
+
+  background: #fff;
+  display: flex;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,.3);
+}
+
+ul li {
+  list-style: none;
+  text-align: center;
+  display: block;
+  border-right: 1px solid rgba(0,0,0,0.2);
+
+
+  height: 100%;
+  width: 8rem;
+
+
+}
+
+ul li:last-child {
+  border-right: none;
+}
+
+ul li a {
+  text-decoration: none;
+  padding: 0 50px;
+  display: block;
+
+}
+
+ul li a .icon {
+  width: 40px;
+  height: 40px;
+  text-align:center;
+  background: #ccc;
+  overflow: hidden;
+  margin: 0 auto 10px;
+
+}
+
+
+ul li a .icon .fa {
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  font-size: 34px;
+  transition: 0.5s;
+  color: #000;
+
+
+}
+
+ul li a .icon .fa:last-child{
+  color: #e91e63;
+
+}
+
+ul li a:hover .icon .fa {
+  transform: translateY(-100%);
+}
+
+ul li a .name {
+  position: relative;
+  height: 20px;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+
+}
+
+ul li a .name span {
+  display: block;
+  position: relative;
+  color: #000;
+  font-size: 18px;
+  line-height: 20px;
+  transition: 0.5s;
+
+
+}
+
+
+ul li a .name span:before {
+  content: attr(data-text);
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #e91e63;
+}
+
+ul li a:hover .name span {
+  transform: translateY(20px);
+}
+
+
+
+
+
+header {
+  background-color: #ffffff;
+  position: relative;
+
+}
+
+h1 {
+
+  position: absolute;
+  left: 50%;
+  margin-left: -7.5ch;
+  text-align: center
+}
+
+
+
+
+ section {
+
+   position: relative;
+   background: linear-gradient(90deg, #f0027f, #75489f);
+ }
+
+
+ h1 {
+   border-right: transparent;
+
+
+ }
+  h1 {
+    animation: type 3s steps(13);
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: consolas;
+    border-right: 4px solid white!important;
+    width: 13ch;
+    animation-fill-mode: forwards;
+    color: white;
+
+
+ }
+
+
+ @keyframes type {
+   0% {
+     width: 0ch;
+     border-right: 4px solid black;
+
+
+       background-color: #ff0153;
+   }
+   95% {
+     width: 13ch;
+     border-right: 4px solid black;
+
+
+              background-color: #ff0153;
+
+
+
+   }
+   95.01% {
+     width: 13ch;
+     border-right: 4px solid black;
+
+              background-color: #ff0153;
+   }
+
+   100% {
+     width: 13ch;
+     border-right: none;
+
+            background-color:#ff0153 ;
+   }
+
+
+
+ }
+
+
+
+
+
+section {
+  position: initial;
+  width: 100%;
+  height: 50vh;
+
+  background: url(img/wool.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+.slantedDivA {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: #ff0153;
+
+
+}
+
+.slantedDivA:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: inherit;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transform-origin: top right;
+  transform: skewY(5deg);
+
+}

@@ -1,0 +1,158 @@
+<section>
+
+  <div class="box">
+    <i class="fa fa-quote-left fa2" aria-hidden="true"></i>
+    <div class="text2">
+      <i class="fa fa-quote-right fa1" aria-hidden="true"></i>
+
+    <div>
+      <h3>Quote of the day</h3>
+      <p>If civilization is to survive, we must cultivate the science of human relationships - the ability of all peoples, of all kinds, to live together, in the same world at peace.</p>
+      </div>
+      </div>
+    </div>
+</section>
+
+
+.box {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 500px;
+  height: 400px;
+
+  transform-style: preserve-3d;
+  perspective: 2000px;
+  transition:0.5s;
+  margin: 60px ;
+}
+
+.box:hover {
+  transform: translate(-50%) rotateY(-30deg) skewY(5deg)!important;
+}
+
+.box:before {
+  content: '';
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  background: transparent;
+  border-top: 20px solid #fff;
+  border-left: 20px solid #fff;
+  box-sizing: border-box;
+
+}
+
+h3 {
+
+
+
+  color: #fff;
+
+}
+
+p {
+
+  color: #fff;
+}
+.box:after {
+  content: '';
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  background: transparent;
+  border-bottom: 20px solid #fff;
+  border-right: 20px solid #fff;
+  box-sizing: border-box;
+
+}
+
+
+.box .text2 {
+  position: absolute;
+  top: 30px;
+  left: -30px;
+  background: #262626;
+  width:calc(100% + 60px);
+  height: calc(100% - 60px);
+  transition: 0.5s;
+
+
+}
+
+.text2 div {
+  position: absolute;
+  top: 50%;
+  left:0;
+  width: 100%;
+  transform: translateY(-50%);
+  padding: 40px 80px;
+  box-sizing: border-box;
+  text-align: center;
+  z-index: 3;
+
+
+
+}
+
+.box:hover .text2 {
+  transform: rotateY(30deg) skewY(-5deg)!important;
+
+}
+
+.text2 div h3 {
+  margin: 0 0 20px;
+  padding:0;
+  font-size: 25px;
+
+
+}
+
+.text2 div p {
+  margin: 0 0 20px;
+  padding:0;
+  font-size: 18px!important;
+
+
+}
+
+ .fa.fa1 {
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  color: #262626;
+  text-align:center;
+  line-height: 80px;
+  font-size: 40px;
+}
+
+.fa.fa2 {
+ width: 80px;
+ height: 80px;
+ background: #fff;
+ color: #262626;
+ text-align:center;
+ line-height: 80px;
+ font-size: 40px;
+}
+
+.fa.fa1{
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.fa.fa2{
+  position: absolute;
+  bottom:0;
+  right:0;
+  z-index: 1;
+}
+
+
+
+<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"             title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
